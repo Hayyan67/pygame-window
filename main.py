@@ -11,6 +11,11 @@ L2 = L1 = Label(root,text="Enter your name", bg="light green", fg="blue", font=(
 L2.pack()
 e1=Entry(root)
 e1.pack()
+def msg():
+    a1=e1.get()
+    m1="Hey "+ a1+ "\n Welcome to my window"
+    L3 = Label(root, text=m1)
+    L3.pack()
 b1 =Button(root, text='Submit', bg='red', fg='white')
 b1.pack()
 root.mainloop()
